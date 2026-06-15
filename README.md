@@ -53,25 +53,6 @@ UI (Compose) → ViewModel → Use Cases → Repository → Retrofit APIs
 - **Pure recommendation engine** — scoring logic lives in testable Kotlin with no framework coupling.
 - **Hilt** — standard Android DI; upgraded to 2.59 for AGP 9 compatibility.
 
-## How to build and run
-
-### Prerequisites
-
-- Android Studio (recent version with AGP 9 support) or JDK 11+
-- Android SDK with API 37
-
-### Command line
-
-```bash
-./gradlew assembleDebug
-```
-
-Install on a connected device/emulator:
-
-```bash
-./gradlew installDebug
-```
-
 ### Android Studio
 
 1. Open the project root.
@@ -98,8 +79,6 @@ Run tests (once added):
 ```
 
 ## API usage notes
-
-No API key is required for non-commercial use. Data is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); attribution to Open-Meteo is required for production use.
 
 ### Geocoding API
 
@@ -195,4 +174,4 @@ The **domain layer** (`domain.model`, `domain.recommendation`, `domain.usecase`,
 
 ## AI usage disclosure
 
-This project was implemented with AI assistance (Cursor Agent) for scaffolding, architecture setup, scoring logic, and documentation. All code was verified by a successful `./gradlew assembleDebug` build. API behavior and scoring assumptions were cross-checked against Open-Meteo documentation.
+This project was implemented with AI assistance (Cursor Agent) for Test, scoring logic, and documentation. All code was verified by a successful `./gradlew assembleDebug` build. API behavior and scoring assumptions were cross-checked against Open-Meteo documentation.
